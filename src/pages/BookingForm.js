@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const BookingForm = () => {
     const [formData, setFormData] = useState({
@@ -57,7 +58,7 @@ const BookingForm = () => {
             </div>
             <div>
                 <label htmlFor="comment">Comment:</label>
-                <input
+                <textarea
                     type="comment"
                     id="comment"
                     name="comment"
@@ -85,7 +86,7 @@ const BookingForm = () => {
                     onChange={inputChangeHandler}
                 />
             </div>
-            <button type="submit">Reserve a Table</button>
+            <Link to="/ConfirmationForm"><button aria-label='On Click'>Reserve a Table</button></Link>
         </form>
     );
 };
