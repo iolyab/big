@@ -118,7 +118,8 @@ button {
 }
 
 /*BookingForm*/
-form {
+
+form, .comfirm{
   max-width: 500px;
   margin: 20px auto;
   padding: 20px;
@@ -129,40 +130,36 @@ form {
   font-family: Arial, sans-serif;
 }
 
-form div {
+.formField{
+  padding: 50px 20px;
   margin-bottom: 15px;
 }
 
-label {
+input, label{
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
   color: #333;
 }
+#book-date, #book-time, #book-guests, #book-occasion{
+  background: #bdbdbd43;
+  padding: 8px 24px;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+}
 
-input[type="text"],
-textarea {
+#book-comment {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #bdbdbd43;
   border-radius: 4px;
   font-size: 16px;
   box-sizing: border-box;
   transition: border-color 0.3s;
 }
 
-input:focus,
-textarea:focus {
-  border-color: green;
-  outline: none;
-}
-
-textarea {
-  resize: vertical; /* Allows vertical resizing */
-  min-height: 100px;
-}
-
-button {
+.btnReceive input{
   display: inline-block;
   background-color: #F4CE14;
   color: black;
@@ -172,9 +169,10 @@ button {
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s;
+
 }
 
-button:hover {
+.btnReceive input:hover {
   background-color:#495E57;
   color:#EDEFEE;
   outline: auto;
@@ -187,6 +185,7 @@ form h1 {
   margin-bottom: 20px;
 }
 
+/*confirmation*/
 .confirm-heading h1{
   font-weight: bold;
   text-transform: uppercase;
@@ -200,6 +199,9 @@ form h1 {
   text-align: center;
 }
 
+
+
+/*menu*/
 
 .menu-container{
   margin: 110px auto;
@@ -254,6 +256,41 @@ form h1 {
   font-size: 16px;
   font-weight: 600;
 }
+
+/*reviews*/
+
+.cards-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;  /* Space between cards */
+  padding: 40px;
+}
+
+.testimonial-card {
+  background-color: lightgrey;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  flex-basis: 22%; /* Ensures 4 cards in one row */
+}
+
+.testimonial-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 2px solid #f4f4f4;
+}
+
+
+
+
+
+/*footer*/
 
 footer section{
   padding: 10px 13%;
