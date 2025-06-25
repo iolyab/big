@@ -1,0 +1,25 @@
+.aboutSection {
+  background-color: #495e57;
+  padding: 40px 0;
+  color: #edefee;
+  padding: 100px 13%;
+  position: relative;
+}
+
+.aboutImg {
+  position: absolute;
+  top: 5%;
+  margin-left: 900px;
+}
+
+.aboutImgSecond {
+  position: absolute;
+  top: 20%;
+  margin-left: 700px;
+}
+
+img {
+  width: 250px;
+  height: 320px;
+  object-fit: cover;
+}

@@ -1,0 +1,51 @@
+.testContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.customTitle {
+  color: black;
+  font-size: 45px;
+  font-weight: bold;
+  font-family: "Markazi Text";
+  margin: 0;
+}
+
+.cardsContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 40px;
+  font-family: "Karla";
+}
+
+.testimonialCard {
+  background-color: lightgrey;
+  padding: 20px;
+  max-width: 270px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  flex-basis: 22%;
+  font-family: "Roboto";
+}
+
+.testimonialImg {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 2px solid #f4f4f4;
+}
+
+.rating {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #495e57;
+}
+
+.review {
+  margin-top: 10px;
+  color: black;
+}

@@ -1,4 +1,4 @@
-import gregory from '../images/Gregory.jpg';
+
 
 const guests = [
     {
@@ -6,28 +6,28 @@ const guests = [
         name: "Gregory",
         rating: 5,
         comment: "The food was delicious!",
-        image: gregory,
+        image: "/images/Gregory.jpg",
     },
     {
         id: 2,
         name: "Gregory",
         rating: 5,
         comment: "The food was delicious!",
-        image: gregory,
+        image: "/images/Gregory.jpg",
     },
     {
         id: 3,
         name: "Gregory",
         rating: 5,
         comment: "The food was delicious!",
-        image: gregory,
+        image: "/images/Gregory.jpg",
     },
     {
         id: 4,
         name: "Gregory",
         rating: 5,
         comment: "The food was delicious!",
-        image: gregory,
+        image: "/images/Gregory.jpg",
     },
 ]
 

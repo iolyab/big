@@ -1,0 +1,24 @@
+.button {
+  background-color: #f4ce14;
+  color: black;
+  padding: 18px 50px 18px 50px;
+  border: none;
+  text-decoration: none;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 550;
+  cursor: pointer;
+  font-family: "Karla";
+
+  &:hover {
+    background-color: rgb(224, 223, 223);
+  }
+}
+
+.orderBtn {
+  padding: 5px 12px;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Karla";
+}

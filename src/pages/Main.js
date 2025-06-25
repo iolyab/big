@@ -1,11 +1,11 @@
-import React, { useReducer, useEffect } from 'react';
+import React, { useReducer } from 'react';
 import { Routes, Route, useNavigate } from "react-router-dom";
 import Header from './Header';
 import Booking from './Booking';
 import Home from './Home';
 import ConfirmationForm from './ConfirmationForm';
 
-const Main = () => {
+const BookingPage = () => {
 
     const seededRandom = function (seed) {
         var m = 2**35 - 31;
@@ -51,15 +51,15 @@ const Main = () => {
     }
 
     return (
-        <main>
+        <section>
             <Routes>
                 <Route path="/" element={<Header />} />
                 <Route path="/booking" element={<Booking availableTimes={state} dispatch={dispatch} submitForm={submitForm}/>} />
                 <Route path="/ConfirmationForm" element={<ConfirmationForm />} />
                 <Route path="/Home" element={<Home />} />
             </Routes>
-        </main>
+        </section>
     );
 };
 
-export default Main;
+export default BookingPage;
